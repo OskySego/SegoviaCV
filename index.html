@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio Personal - Oscar Segovia</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <!-- Enlace a Font Awesome para iconos. Esta librería proporciona una gran variedad de iconos escalables que se pueden usar fácilmente en la web.
+         ¡IMPORTANTE! Se ha corregido el atributo 'xintegrity' a 'integrity'. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        xintegrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="top">
+        <div class="header-content">
+            <img src="assets/img/segoviaoscar.jpg" alt="Oscar Segovia - Desarrollador Front-End" class="profile-img">
+            <h1>Hola! Soy Oscar Osvaldo Segovia</h1>
+            <p>Desarrollador de Sistemas Web Front-End</p>
+            <nav>
+                <ul>
+                    <!-- Los elementos <li> son ítems de la lista, y <a> son los enlaces.
+                         Estos enlaces de navegación interna se desplazan suavemente en la misma pestaña. -->
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#que-hago">Qué hago</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#tecnologias">Tecnologías</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección "Sobre mí". Presenta una descripción personal. La clase 'section' es para estilos comunes.
+             La clase 'hidden' se usa para la animación de aparición en scroll con JavaScript. -->
+        <section id="sobre-mi" class="section hidden">
+            <div class="section-content">
+                <h2>Sobre mí</h2>
+                <p>
+                    Soy un apasionado estudiante de la tecnicatura superior en Desarrollo de Software con experiencia
+                    como docente en escuelas técnicas en el área de informática. Mi enfoque principal es el desarrollo
+                    Front-End, donde me encanta dar vida a diseños y crear experiencias de usuario interactivas.
+                </p>
+                <p>
+                    Mi objetivo es crear soluciones web innovadoras y funcionales que no solo cumplan con los
+                    requisitos técnicos, sino que también brinden una experiencia de usuario excepcional. Siempre
+                    estoy buscando aprender nuevas tecnologías y mejorar mis habilidades para mantenerme al día con
+                    las últimas tendencias en el desarrollo web.
+                </p>
+            </div>
+        </section>
+
+        <!-- Nueva sección "Qué hago". Describe los servicios o áreas de especialización.
+             La clase 'hidden' se usa para la animación de aparición en scroll con JavaScript. -->
+        <section id="que-hago" class="section hidden">
+            <div class="section-content">
+                <h2>Qué hago</h2>
+                <div class="que-hago-grid">
+                    <div class="que-hago-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Desarrollo Front-End</h3>
+                        <p>
+                            Creación de interfaces de usuario atractivas y funcionales utilizando HTML, CSS y
+                            JavaScript.
+                        </p>
+                    </div>
+                    <div class="que-hago-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Diseño Responsivo</h3>
+                        <p>
+                            Adaptación de sitios web para que se vean y funcionen perfectamente en cualquier
+                            dispositivo.
+                        </p>
+                    </div>
+                    <div class="que-hago-item">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Optimización de UI/UX</h3>
+                        <p>
+                            Mejora de la experiencia del usuario y la usabilidad del sitio web para una interacción
+                            óptima.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nueva sección "Experiencia". Detalla tu trayectoria profesional o académica.
+             La clase 'hidden' se usa para la animación de aparición en scroll con JavaScript. -->
+        <section id="experiencia" class="section hidden">
+            <div class="section-content">
+                <h2>Experiencia</h2>
+                <div class="experiencia-item">
+                    <h3>Docente de Informática</h3>
+                    <p class="experiencia-meta">Escuelas Técnicas | 2022 - Presente</p>
+                    <p>
+                        Enseño fundamentos de informática, programación y desarrollo web a estudiantes de nivel técnico.
+                        Fomento el pensamiento lógico y la resolución de problemas en un entorno práctico.
+                    </p>
+                </div>
+                <div class="experiencia-item">
+                    <h3>Estudiante de Tecnicatura Superior en Desarrollo de Software</h3>
+                    <p class="experiencia-meta">Instituto Superior de Formación Técnica | 2023 - Presente</p>
+                    <p>
+                        Adquiero conocimientos avanzados en estructuras de datos, algoritmos, bases de datos y
+                        metodologías ágiles, con un enfoque en el desarrollo de aplicaciones robustas y escalables.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de "Tecnologías". Muestra las habilidades técnicas en una tabla.
+             La clase 'hidden' se usa para la animación de aparición en scroll con JavaScript. -->
+        <section id="tecnologias" class="section hidden">
+            <div class="section-content">
+                <h2>Tecnologías</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tecnología</th>
+                            <th>Nivel</th>
+                            <th>Por aprender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Avanzado</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Intermedio</td>
+                            <td>Grid, Animaciones</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Intermedio</td>
+                            <td>React, Node.js</td>
+                        </tr>
+                        <tr>
+                            <td>C++</td>
+                            <td>Básico</td>
+                            <td>Avanzado</td>
+                        </tr>
+                        <tr>
+                            <td>C#</td>
+                            <td>Básico</td>
+                            <td>Avanzado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Nueva sección "Proyectos". Muestra ejemplos de trabajos realizados con imágenes y descripciones.
+             La clase 'hidden' se usa para la animación de aparición en scroll con JavaScript. -->
+        <section id="proyectos" class="section hidden">
+            <div class="section-content">
+                <h2>Proyectos</h2>
+                <div class="proyectos-grid">
+                    <div class="proyecto-item">
+                        <img src="assets/img/proyecto1.png" alt="Proyecto 1 - Mi primer portafolio">
+                        <h3>Proyecto 1: Mi Primer Portafolio</h3>
+                        <p>Esta es mi primera página web, donde se puede ver la iniciación al mundo de la programación web. Un punto de partida para mis futuros desarrollos.</p>
+                        <!-- El atributo target="_blank" y rel="noopener noreferrer" se usa para abrir el enlace en una nueva pestaña.
+                             La ruta ahora apunta a un archivo HTML local dentro de la carpeta 'proyectos'. -->
+                        <a href="proyectos/proyecto1.html" target="_blank" rel="noopener noreferrer" class="project-link">Ver Proyecto <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="proyecto-item">
+                        <img src="assets/img/proyecto2.png" alt="Proyecto 2 - Portafolio modificado">
+                        <h3>Proyecto 2: Portafolio Mejorado</h3>
+                        <p>Desde el primer portafolio, decidí cambiar algunos aspectos para mejorar la visualización, eligiendo una paleta de lilas y colores parecidos en tonos pastel y medios.</p>
+                        <a href="proyectos/proyecto2.html" target="_blank" rel="noopener noreferrer" class="project-link">Ver Proyecto <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="proyecto-item">
+                        <img src="assets/img/proyecto3.png" alt="Proyecto 3 - Portafolio 2.0">
+                        <h3>Proyecto 3: Portafolio 2.0</h3>
+                        <p>En este proyecto, fui mejorando la página, haciendo que tenga mejor tecnología y sea más agradable a la vista. Quedan muchas modificaciones para realizar que en futuro me ayudarán a crear páginas web increíbles.</p>
+                        <a href="proyectos/proyecto3.html" target="_blank" rel="noopener noreferrer" class="project-link">Ver Proyecto <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nueva sección "Llamada a la Acción" (Call to Action).
+             La clase 'hidden' se usa para la animación de aparición en scroll con JavaScript. -->
+        <section id="call-to-action" class="section hidden">
+            <div class="section-content">
+                <h2>¿Listo para crear algo increíble?</h2>
+                <p>
+                    Si estás buscando un desarrollador Front-End apasionado y dedicado para tu próximo proyecto,
+                    ¡no dudes en contactarme! Estoy siempre abierto a nuevas ideas y colaboraciones.
+                </p>
+                <a href="#contacto" class="cta-button">¡Hablemos!</a>
+            </div>
+        </section>
+
+        <!-- Sección de "Contacto". Contiene un formulario para que los visitantes se pongan en contacto.
+             La clase 'hidden' se usa para la animación de aparición en scroll con JavaScript. -->
+        <section id="contacto" class="section hidden">
+            <div class="section-content">
+                <h2>Contacto</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <span class="error-message" id="nombreError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                        <span class="error-message" id="apellidoError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono (opcional):</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <button type="submit">Enviar <i class="fas fa-paper-plane"></i></button>
+                    <div id="form-message" class="success-message"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contenedor para el único botón "Volver arriba" global.
+         Se coloca fuera de las secciones para que JavaScript lo controle de forma centralizada. -->
+    <div class="back-to-top-container">
+        <a href="#top" class="back-to-top-link" aria-label="Volver arriba">
+            Volver arriba
+        </a>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Oscar Segovia. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Email"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript. Se coloca al final del body para asegurar que el HTML esté
+         completamente cargado antes de que el script intente manipular los elementos. -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

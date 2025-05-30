@@ -1,0 +1,697 @@
+/*
+    Archivo: styles.css
+    Descripción: Estilos para la página principal del portfolio de Oscar Segovia.
+    Autor: Segovia Oscar
+    Fecha: 28/05/2025
+*/
+
+/* Estilos generales para el cuerpo de la página (body) */
+body {
+    font-family: 'Poppins', sans-serif; /* Fuente principal para todo el texto, 'Poppins' para un toque moderno y 'sans-serif' como fallback. */
+    margin: 0; /* Elimina el margen predeterminado del navegador. */
+    padding: 0; /* Elimina el padding predeterminado del navegador. */
+    background-color: #f8f8ff; /* Fondo blanco fantasma, un blanco muy suave para la página. */
+    color: #333; /* Color de texto principal para mejorar la legibilidad. */
+    line-height: 1.8; /* Espaciado entre líneas para una mejor lectura. */
+    scroll-behavior: smooth; /* Habilita el desplazamiento suave al hacer clic en enlaces internos. */
+}
+
+/* Estilos para el encabezado (header) de la página */
+header {
+    background-color: #6a0dad; /* Un color morado oscuro para el fondo del encabezado. */
+    color: white; /* Color de texto blanco para contrastar con el fondo oscuro. */
+    text-align: center; /* Centra el texto y los elementos dentro del encabezado. */
+    padding: 2.5rem 0; /* Espaciado interno superior e inferior. */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Sombra más pronunciada para darle profundidad. */
+    position: relative; /* Necesario para posicionar elementos hijos de forma absoluta si fuera necesario. */
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del encabezado. */
+}
+
+/* Contenedor para el contenido dentro del encabezado */
+.header-content {
+    max-width: 960px; /* Ancho máximo para el contenido del encabezado. */
+    margin: 0 auto; /* Centra el contenido horizontalmente. */
+    padding: 0 20px; /* Espaciado a los lados para evitar que el contenido toque los bordes. */
+}
+
+/* Estilos para la imagen de perfil dentro del encabezado */
+.profile-img {
+    width: 180px; /* Ancho fijo para la imagen. */
+    height: 180px; /* Alto fijo para la imagen. */
+    border-radius: 50%; /* Hace la imagen circular. */
+    border: 6px solid #e0b0ff; /* Borde de color lila claro alrededor de la imagen. */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse. */
+    margin-bottom: 1.5rem; /* Margen inferior. */
+    box-shadow: 0 0 20px rgba(153, 127, 247, 0.6); /* Sombra con color lila para resaltar. */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transición suave para los efectos hover. */
+}
+
+.profile-img:hover {
+    transform: scale(1.08) rotate(3deg); /* Ligeramente más grande y rotada al pasar el ratón para un efecto dinámico. */
+    box-shadow: 0 0 30px rgba(153, 127, 247, 0.8); /* Sombra más intensa al pasar el ratón. */
+}
+
+/* Estilos para los títulos h1 y h2 */
+h1 {
+    font-size: 3rem; /* Tamaño de fuente más grande para el título principal. */
+    margin-bottom: 0.8rem; /* Margen inferior. */
+    color: white; /* Color blanco para el h1 en el header. */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra de texto para mayor legibilidad. */
+}
+
+h2 {
+    font-size: 2.5rem; /* Tamaño de fuente para los títulos de sección. */
+    color: #6a0dad; /* Color morado oscuro para los títulos de sección. */
+    margin-bottom: 2rem; /* Margen inferior. */
+    text-align: center; /* Centra los títulos de sección. */
+    position: relative; /* Para el posible uso de pseudo-elementos. */
+}
+
+/* Línea decorativa debajo de los títulos de sección */
+h2::after {
+    content: ''; /* Contenido vacío para el pseudo-elemento. */
+    display: block; /* Se comporta como un bloque. */
+    width: 80px; /* Ancho de la línea. */
+    height: 4px; /* Grosor de la línea. */
+    background-color: #997ff7; /* Color lila para la línea. */
+    margin: 10px auto 0; /* Centra la línea y le da margen superior. */
+    border-radius: 2px; /* Bordes redondeados para la línea. */
+}
+
+header p {
+    font-size: 1.3rem; /* Tamaño de fuente para el subtítulo en el header. */
+    color: #e0e0e0; /* Color de texto más claro. */
+}
+
+/* Estilos para la navegación (navbar) */
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista. */
+    padding: 0; /* Elimina el padding predeterminado. */
+    display: flex; /* Usa Flexbox para alinear los ítems horizontalmente. */
+    justify-content: center; /* Centra los ítems de navegación. */
+    gap: 2rem; /* Espacio entre los ítems de navegación. */
+    margin-top: 2rem; /* Margen superior. */
+    flex-wrap: wrap; /* Permite que los ítems se envuelvan en pantallas pequeñas. */
+}
+
+nav ul li a {
+    color: white; /* Color de texto blanco para los enlaces. */
+    text-decoration: none; /* Quita el subrayado de los enlaces. */
+    font-weight: 600; /* Texto seminegrita. */
+    padding: 0.7rem 1.4rem; /* Espaciado interno para hacer los enlaces más clicables. */
+    border-radius: 25px; /* Bordes redondeados para un estilo de "píldora". */
+    background-color: rgba(153, 127, 247, 0.2); /* Fondo lila semi-transparente. */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transiciones suaves para efectos interactivos. */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera. */
+}
+
+nav ul li a:hover {
+    background-color: #997ff7; /* Color de fondo lila más sólido al pasar el ratón. */
+    transform: translateY(-5px); /* Ligeramente elevado al pasar el ratón. */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada. */
+}
+
+/* Estilos para el contenido principal (main) */
+main {
+    padding: 50px 30px; /* Espaciado interno generoso para todas las secciones. */
+    margin: 30px auto; /* Margen y centrado automático. */
+    max-width: 1100px; /* Ancho máximo para el contenido principal. */
+    background-color: #ffffff; /* Fondo blanco para las secciones. */
+    border-radius: 15px; /* Bordes redondeados para el contenedor principal. */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada para resaltar. */
+}
+
+/* Estilos comunes para todas las secciones */
+.section {
+    margin-bottom: 5rem; /* Margen inferior generoso para separar las secciones. */
+    padding: 3rem; /* Espaciado interno para cada sección. */
+    background-color: #fff; /* Fondo blanco. */
+    border-radius: 12px; /* Bordes redondeados. */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra más notable. */
+    text-align: center; /* Centra el contenido de las secciones. */
+    opacity: 0; /* Inicialmente oculto para la animación de aparición. */
+    transform: translateY(20px); /* Ligeramente desplazado hacia abajo para la animación. */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Transición suave para la animación. */
+}
+
+/* Clase para mostrar las secciones después de la animación de aparición */
+.section.visible {
+    opacity: 1; /* Totalmente visible. */
+    transform: translateY(0); /* Vuelve a su posición original. */
+}
+
+.section-content {
+    max-width: 900px; /* Ancho máximo para el contenido de las secciones. */
+    margin: 0 auto; /* Centra el contenido. */
+}
+
+.section p {
+    font-size: 1.15rem; /* Tamaño de fuente para los párrafos de sección. */
+    color: #555; /* Color de texto más suave. */
+    line-height: 1.7; /* Espaciado entre líneas para mejor lectura. */
+}
+
+/*////////////////// SECCIÓN SOBRE MÍ ///////////////////*/
+#sobre-mi p {
+    text-align: justify; /* Justifica el texto para una mejor lectura. */
+    margin-bottom: 1.5rem; /* Margen inferior para los párrafos. */
+    color: #444; /* Color de texto ligeramente más oscuro. */
+}
+
+/*////////////////// SECCIÓN QUÉ HAGO ///////////////////*/
+.que-hago-grid {
+    display: grid; /* Usa Grid para un diseño de columnas. */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas responsivas. */
+    gap: 2.5rem; /* Espacio entre los ítems. */
+    margin-top: 2.5rem; /* Margen superior. */
+}
+
+.que-hago-item {
+    background-color: #f8f8ff; /* Fondo blanco fantasma para cada ítem. */
+    padding: 2.5rem; /* Espaciado interno. */
+    border-radius: 12px; /* Bordes redondeados. */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil. */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para efectos interactivos. */
+}
+
+.que-hago-item:hover {
+    transform: translateY(-8px); /* Ligeramente elevado al pasar el ratón. */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada. */
+}
+
+.que-hago-item i {
+    font-size: 4rem; /* Tamaño grande para los iconos. */
+    color: #9370db; /* Púrpura medio - color lila para iconos. */
+    margin-bottom: 1.5rem; /* Margen inferior. */
+}
+
+.que-hago-item h3 {
+    color: #6a0dad; /* Color morado para los títulos de ítem. */
+    margin-bottom: 1rem; /* Margen inferior. */
+    font-size: 1.8rem; /* Tamaño de fuente. */
+}
+
+.que-hago-item p {
+    font-size: 1.05rem; /* Tamaño de fuente para la descripción. */
+    color: #666; /* Color de texto. */
+}
+
+/*////////////////// SECCIÓN EXPERIENCIA ///////////////////*/
+.experiencia-item {
+    background-color: #f8f8ff; /* Fondo blanco fantasma para cada ítem de experiencia. */
+    padding: 2rem; /* Espaciado interno. */
+    border-left: 5px solid #997ff7; /* Borde izquierdo lila para un toque visual. */
+    border-radius: 8px; /* Bordes redondeados. */
+    margin-bottom: 2rem; /* Margen inferior. */
+    text-align: left; /* Alinea el texto a la izquierda. */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Sombra sutil. */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para efectos interactivos. */
+}
+
+.experiencia-item:hover {
+    transform: translateX(5px); /* Desplazamiento ligero a la derecha en hover. */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada. */
+}
+
+.experiencia-item h3 {
+    color: #6a0dad; /* Color morado para el título de la experiencia. */
+    font-size: 1.6rem; /* Tamaño de fuente. */
+    margin-bottom: 0.5rem; /* Margen inferior. */
+}
+
+.experiencia-meta {
+    font-size: 1rem; /* Tamaño de fuente para la meta-información (fechas, lugar). */
+    color: #888; /* Color de texto más suave. */
+    margin-bottom: 1rem; /* Margen inferior. */
+    font-style: italic; /* Texto en cursiva. */
+}
+
+.experiencia-item p {
+    font-size: 1.05rem; /* Tamaño de fuente para la descripción. */
+    color: #555; /* Color de texto. */
+}
+
+/*////////////////// SECCIÓN TECNOLOGÍAS ///////////////////*/
+#tecnologias table {
+    width: 100%; /* Ancho completo de la tabla. */
+    border-collapse: collapse; /* Colapsa los bordes de las celdas. */
+    margin-top: 2.5rem; /* Margen superior. */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para la tabla. */
+    border-radius: 10px; /* Bordes redondeados. */
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente. */
+}
+
+#tecnologias th,
+#tecnologias td {
+    border: 1px solid #eee; /* Borde ligero para las celdas. */
+    padding: 15px 20px; /* Espaciado interno. */
+    text-align: left; /* Alineación del texto a la izquierda. */
+    color: #4b0082; /* Color índigo oscuro. */
+}
+
+#tecnologias th {
+    background-color: #e0b0ff; /* Lila claro - color pastel para las cabeceras. */
+    color: white; /* Texto blanco. */
+    font-weight: 700; /* Negrita. */
+    text-transform: uppercase; /* Texto en mayúsculas. */
+    font-size: 1rem; /* Tamaño de fuente. */
+}
+
+#tecnologias tr:nth-child(even) {
+    background-color: #f8f8ff; /* Color de fondo alterno para las filas pares. */
+}
+
+#tecnologias tr:hover {
+    background-color: #e6e6fa; /* Lavanda claro - color de fondo al pasar el ratón sobre las filas. */
+}
+
+/*////////////////// SECCIÓN PROYECTOS ///////////////////*/
+.proyectos-grid {
+    display: grid; /* Usa Grid para un diseño de columnas. */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Columnas responsivas. */
+    gap: 3rem; /* Espacio entre los ítems. */
+    margin-top: 3rem; /* Margen superior. */
+}
+
+.proyecto-item {
+    background-color: #fefefe; /* Fondo claro para cada proyecto. */
+    border-radius: 15px; /* Bordes redondeados. */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15); /* Sombra para resaltar los proyectos. */
+    overflow: hidden; /* Asegura que la imagen no se desborde. */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones para efectos interactivos. */
+    display: flex; /* Usa Flexbox para organizar el contenido verticalmente. */
+    flex-direction: column; /* Apila los elementos verticalmente. */
+    align-items: center; /* Centra los elementos horizontalmente. */
+    text-align: center; /* Centra el texto. */
+    padding-bottom: 2rem; /* Espaciado inferior. */
+}
+
+.proyecto-item:hover {
+    transform: translateY(-10px); /* Ligeramente elevado al pasar el ratón. */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25); /* Sombra más pronunciada. */
+}
+
+.proyecto-item img {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor. */
+    height: 220px; /* Altura fija para las imágenes de los proyectos. */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse. */
+    border-bottom: 1px solid #eee; /* Borde inferior para separar la imagen del texto. */
+    margin-bottom: 1.5rem; /* Margen inferior. */
+}
+
+.proyecto-item h3 {
+    color: #6a0dad; /* Color morado para el título del proyecto. */
+    margin-bottom: 1rem; /* Margen inferior. */
+    padding: 0 1.5rem; /* Espaciado lateral. */
+    font-size: 1.8rem; /* Tamaño de fuente. */
+}
+
+.proyecto-item p {
+    font-size: 1.05rem; /* Tamaño de fuente para la descripción del proyecto. */
+    color: #555; /* Color de texto. */
+    padding: 0 2rem; /* Espaciado lateral. */
+    flex-grow: 1; /* Permite que el párrafo ocupe el espacio disponible. */
+}
+
+.proyecto-item .project-link {
+    display: inline-block; /* Se comporta como un bloque pero en línea con el texto. */
+    background-color: #997ff7; /* Color de fondo del enlace. */
+    color: white; /* Color de texto blanco. */
+    padding: 1rem 2rem; /* Espaciado interno. */
+    border-radius: 30px; /* Bordes muy redondeados para un estilo de botón. */
+    text-decoration: none; /* Quita el subrayado. */
+    margin-top: 2rem; /* Margen superior. */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transiciones suaves. */
+    font-weight: 600; /* Negrita. */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera. */
+}
+
+.proyecto-item .project-link:hover {
+    background-color: #6a0dad; /* Color de fondo morado oscuro al pasar el ratón. */
+    transform: translateY(-3px); /* Ligeramente elevado. */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada. */
+}
+
+.proyecto-item .project-link i {
+    margin-left: 0.8rem; /* Margen a la izquierda del icono. */
+    font-size: 1rem; /* Tamaño del icono. */
+}
+
+/*////////////////// SECCIÓN LLAMADA A LA ACCIÓN (CTA) ///////////////////*/
+.cta-section {
+    background-color: #e0b0ff; /* Lila claro como fondo para la CTA. */
+    color: white; /* Texto blanco para contrastar. */
+    padding: 4rem 2rem; /* Espaciado interno generoso. */
+    border-radius: 15px; /* Bordes redondeados. */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra pronunciada. */
+    text-align: center; /* Centra el contenido. */
+    margin-bottom: 5rem; /* Margen inferior. */
+}
+
+.cta-section h2 {
+    color: white; /* Título blanco para la CTA. */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra de texto. */
+}
+
+.cta-section p {
+    color: rgba(255, 255, 255, 0.9); /* Texto blanco ligeramente transparente. */
+    font-size: 1.2rem; /* Tamaño de fuente. */
+    margin-bottom: 2.5rem; /* Margen inferior. */
+    max-width: 700px; /* Ancho máximo para el párrafo. */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block; /* Se comporta como un bloque pero en línea con el texto. */
+    background-color: #6a0dad; /* Morado oscuro para el botón CTA. */
+    color: white; /* Texto blanco. */
+    padding: 1.2rem 3rem; /* Espaciado interno generoso. */
+    border-radius: 30px; /* Bordes muy redondeados. */
+    text-decoration: none; /* Sin subrayado. */
+    font-size: 1.3rem; /* Tamaño de fuente grande. */
+    font-weight: 700; /* Negrita. */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra. */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transiciones suaves. */
+}
+
+.cta-button:hover {
+    background-color: #4b0082; /* Índigo - color más oscuro al pasar el ratón. */
+    transform: translateY(-5px); /* Ligeramente elevado. */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada. */
+}
+
+/*////////////////// SECCIÓN CONTACTO ///////////////////*/
+#contacto form {
+    display: grid; /* Usa Grid para organizar el formulario en columnas. */
+    grid-template-columns: 1fr; /* Una columna por defecto. */
+    gap: 1.8rem; /* Espacio entre los elementos del formulario. */
+    max-width: 650px; /* Ancho máximo para el formulario. */
+    margin: 2.5rem auto 0 auto; /* Centra el formulario y le da margen superior. */
+    padding: 2.5rem; /* Espaciado interno. */
+    background-color: #f9f9f9; /* Fondo claro. */
+    border-radius: 12px; /* Bordes redondeados. */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más notable. */
+}
+
+/* Media query para pantallas más grandes en el formulario */
+@media (min-width: 768px) {
+    #contacto form {
+        grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas más grandes. */
+    }
+
+    #contacto .form-group:nth-child(odd) {
+        grid-column: 1; /* Los elementos impares van en la primera columna. */
+    }
+
+    #contacto .form-group:nth-child(even) {
+        grid-column: 2; /* Los elementos pares van en la segunda columna. */
+    }
+
+    #contacto button {
+        grid-column: 1 / span 2; /* El botón ocupa ambas columnas. */
+        justify-self: center; /* Centra el botón. */
+    }
+}
+
+.form-group {
+    display: flex; /* Usa Flexbox para alinear label e input. */
+    flex-direction: column; /* Apila label e input verticalmente. */
+    margin-bottom: 0.5rem; /* Margen inferior. */
+    text-align: left; /* Alinea el texto a la izquierda. */
+}
+
+.form-group label {
+    margin-bottom: 0.6rem; /* Margen inferior para la etiqueta. */
+    font-weight: 600; /* Negrita para las etiquetas. */
+    color: #444; /* Color de texto. */
+    font-size: 1.05rem; /* Tamaño de fuente. */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Ancho completo del input/textarea. */
+    padding: 12px; /* Espaciado interno. */
+    border: 1px solid #ddd; /* Borde ligero. */
+    border-radius: 8px; /* Bordes redondeados. */
+    font-size: 1.05rem; /* Tamaño de fuente. */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total. */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #997ff7; /* Color del borde al enfocar. */
+    outline: none; /* Elimina el contorno predeterminado. */
+    box-shadow: 0 0 8px rgba(153, 127, 247, 0.6); /* Sombra al enfocar. */
+}
+
+.error-message {
+    color: #e74c3c; /* Color rojo para mensajes de error. */
+    font-size: 0.95rem; /* Tamaño de fuente más pequeño. */
+    margin-top: 0.5rem; /* Margen superior. */
+    display: block; /* Asegura que ocupe su propia línea. */
+}
+
+#contacto button {
+    background-color: #6a0dad; /* Color de fondo morado para el botón. */
+    color: white; /* Color de texto blanco. */
+    padding: 15px 30px; /* Espaciado interno. */
+    border: none; /* Sin borde. */
+    border-radius: 30px; /* Bordes muy redondeados. */
+    cursor: pointer; /* Cambia el cursor al pasar por encima. */
+    font-size: 1.2rem; /* Tamaño de fuente. */
+    font-weight: 700; /* Negrita. */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transiciones suaves. */
+    display: flex; /* Usa Flexbox para alinear contenido. */
+    align-items: center; /* Centra verticalmente. */
+    justify-content: center; /* Centra horizontalmente. */
+    gap: 0.8rem; /* Espacio entre texto e icono. */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra. */
+}
+
+#contacto button:hover {
+    background-color: #997ff7; /* Color de fondo lila al pasar el ratón. */
+    transform: translateY(-3px); /* Ligeramente elevado. */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada. */
+}
+
+.success-message {
+    color: #27ae60; /* Color verde para mensajes de éxito. */
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/*////////////////// PIE DE PÁGINA ///////////////////*/
+footer {
+    text-align: center; /* Centra el texto en el pie de página. */
+    padding: 2rem 0; /* Espaciado interno superior e inferior. */
+    background-color: #333; /* Color de fondo oscuro. */
+    color: #e0e0e0; /* Color de texto claro. */
+    font-size: 0.95rem; /* Tamaño de fuente. */
+    margin-top: 4rem; /* Margen superior para separarlo del contenido. */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15); /* Sombra superior. */
+}
+
+.footer-content {
+    max-width: 960px; /* Ancho máximo para el contenido del pie de página. */
+    margin: 0 auto; /* Centra el contenido. */
+    padding: 0 20px; /* Espaciado lateral. */
+}
+
+.social-icons {
+    margin-top: 1.5rem; /* Margen superior para los iconos. */
+}
+
+.social-icons a {
+    color: white; /* Color blanco para los iconos. */
+    font-size: 2rem; /* Tamaño de los iconos. */
+    margin: 0 1rem; /* Espacio entre iconos. */
+    transition: color 0.3s ease, transform 0.2s ease; /* Transiciones suaves. */
+}
+
+.social-icons a:hover {
+    color: #e0b0ff; /* Lila claro en hover. */
+    transform: translateY(-5px) scale(1.1); /* Ligeramente elevado y un poco más grande. */
+}
+
+/*////////////////// BOTÓN VOLVER ARRIBA FLOTANTE ///////////////////*/
+/* Contenedor para el botón "Volver arriba" flotante */
+.back-to-top-container {
+    position: fixed; /* Posición fija en la pantalla. */
+    bottom: 30px; /* Distancia desde la parte inferior. */
+    right: 30px; /* Distancia desde la parte derecha. */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos. */
+    opacity: 0; /* Inicialmente oculto para que JavaScript lo muestre. */
+    visibility: hidden; /* Oculto por defecto. */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transiciones suaves. */
+    transform: translateY(20px); /* Ligeramente desplazado hacia abajo para la animación de aparición. */
+}
+
+/* Estilos para el enlace del botón "Volver arriba" flotante */
+.back-to-top-link {
+    display: inline-flex; /* Permite centrar el contenido (texto) */
+    align-items: center; /* Alinea verticalmente el texto */
+    justify-content: center; /* Alinea horizontalmente el texto */
+    background-color: #6a0dad; /* Color de fondo morado. */
+    color: white; /* Color de texto blanco. */
+    padding: 10px 20px; /* Espaciado interno para el texto */
+    width: auto; /* Ancho automático para el texto */
+    height: auto; /* Alto automático para el texto */
+    border-radius: 25px; /* Bordes redondeados para un estilo de píldora */
+    font-size: 1rem; /* Tamaño de fuente para el texto */
+    font-weight: 600; /* Negrita para el texto */
+    text-decoration: none; /* Quita el subrayado. */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra. */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transiciones suaves. */
+}
+
+/* Clase para mostrar el botón cuando se añade con JavaScript */
+.back-to-top-container.show {
+    opacity: 1; /* Totalmente visible. */
+    visibility: visible; /* Visible. */
+    transform: translateY(0); /* Vuelve a su posición original. */
+}
+
+.back-to-top-link:hover {
+    background-color: #997ff7; /* Color de fondo lila al pasar el ratón. */
+    transform: translateY(-5px); /* Ligeramente elevado. */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada. */
+}
+
+
+/*////////////////// RESPONSIVIDAD (Media Queries) ///////////////////*/
+
+/* Teléfonos pequeños y medianos */
+@media (max-width: 600px) {
+    header {
+        padding: 1.5rem 0;
+    }
+
+    h1 {
+        font-size: 2.2rem; /* Reduce el tamaño del título principal. */
+    }
+
+    header p {
+        font-size: 1rem; /* Reduce el tamaño del subtítulo. */
+    }
+
+    nav ul {
+        flex-direction: column; /* Apila los ítems de navegación verticalmente. */
+        gap: 0.8rem; /* Reduce el espacio entre ítems. */
+    }
+
+    nav ul li a {
+        padding: 0.4rem 0.8rem; /* Reduce el padding de los enlaces. */
+    }
+
+    main {
+        padding: 25px 15px; /* Reduce el padding del main. */
+        margin: 15px auto; /* Ajusta el margen. */
+    }
+
+    .section {
+        padding: 2rem; /* Reduce el padding de las secciones. */
+        margin-bottom: 3.5rem; /* Reduce el margen entre secciones. */
+    }
+
+    h2 {
+        font-size: 2rem; /* Reduce el tamaño de los títulos de sección. */
+    }
+
+    .que-hago-grid, .proyectos-grid {
+        grid-template-columns: 1fr; /* Una sola columna para las secciones de grid. */
+    }
+
+    .que-hago-item, .proyecto-item, .experiencia-item {
+        padding: 1.8rem;
+    }
+
+    .que-hago-item i {
+        font-size: 3.5rem;
+    }
+
+    .que-hago-item h3 {
+        font-size: 1.6rem;
+    }
+
+    .proyecto-item img {
+        height: 180px;
+    }
+
+    .proyecto-item h3 {
+        font-size: 1.6rem;
+    }
+
+    .cta-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+    }
+
+    #contacto form {
+        padding: 2rem; /* Reduce el padding del formulario. */
+    }
+
+    #contacto button {
+        padding: 12px 25px; /* Reduce el padding del botón. */
+        font-size: 1.1rem; /* Reduce el tamaño de fuente del botón. */
+    }
+
+    .social-icons a {
+        font-size: 1.6rem; /* Reduce el tamaño de los iconos sociales. */
+        margin: 0 0.6rem; /* Reduce el espacio entre iconos sociales. */
+    }
+
+    .back-to-top-container {
+        /* Ajustes para pantallas pequeñas */
+        padding: 8px 15px; /* Menos padding para el texto */
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/* Tablets y pantallas medianas */
+@media (min-width: 601px) and (max-width: 900px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    nav ul {
+        gap: 1.5rem;
+    }
+
+    main {
+        padding: 40px 25px;
+    }
+
+    .section {
+        padding: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .que-hago-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .proyectos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    #contacto form {
+        max-width: 550px;
+    }
+}
+

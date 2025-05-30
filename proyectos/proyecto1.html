@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1: Mi Primer Portafolio - Oscar Segovia</title>
+    <!-- Enlace a la hoja de estilos principal.
+         La ruta '../css/styles.css' significa:
+         1. '..': Sube un nivel de directorio (de la carpeta 'proyectos' a la raíz de tu proyecto).
+         2. 'css/styles.css': Luego, entra en la carpeta 'css' y busca el archivo 'styles.css'.
+         Asegúrate de que tu carpeta 'css' esté al mismo nivel que tu carpeta 'proyectos'. -->
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <!-- Enlace a Font Awesome para iconos.
+         ¡IMPORTANTE! Se ha corregido el atributo 'xintegrity' a 'integrity'. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        xintegrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo temporal para verificar que el CSS de la página de proyecto se carga */
+        body {
+            background-color: #f0e6fa; /* Lavanda muy claro, para confirmar que el CSS está activo */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Proyecto 1: Mi Primer Portafolio</h1>
+            <p>La base de mi viaje en el desarrollo web Front-End.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="section-content">
+                <h2>Detalles del Proyecto</h2>
+                <!-- Ruta de la imagen: '../assets/img/proyecto1.png'
+                     Similar al CSS, '../' sube un nivel, luego entra en 'assets/img'.
+                     Asegúrate de que tu carpeta 'assets' esté al mismo nivel que 'proyectos' y 'css'. -->
+                <img src="../assets/img/proyecto1.png" alt="Captura de pantalla Proyecto 1" style="max-width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px;">
+                <p>
+                    Este proyecto representa mi primera incursión en el desarrollo web. Aquí apliqué los fundamentos de HTML para estructurar el contenido y CSS para darle un estilo básico. Fue una etapa crucial para entender cómo se construyen las páginas web desde cero.
+                </p>
+                <p>
+                    Aprendí sobre la estructura semántica de HTML, cómo usar etiquetas para encabezados, párrafos, listas y tablas. En CSS, experimenté con selectores, propiedades de color, tipografía y el modelo de caja. Aunque sencillo, este proyecto sentó las bases para mis futuros aprendizajes y mejoras.
+                </p>
+                <h3>Tecnologías Utilizadas:</h3>
+                <ul>
+                    <li>HTML5: Para la estructura y el contenido.</li>
+                    <li>CSS3: Para el diseño y la presentación.</li>
+                </ul>
+                <a href="../index.html#proyectos" class="cta-button" style="margin-top: 30px;">Volver al Portfolio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Oscar Segovia. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Email"><i class="fa fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- Incluye scripts.js para el botón "Volver arriba" dinámico y otras funcionalidades si se añaden.
+         La ruta '../js/scripts.js' sube un nivel (de 'proyectos' a la raíz) y luego entra en 'js'. -->
+    <script src="../js/scripts.js"></script>
+</body>
+
+</html>
